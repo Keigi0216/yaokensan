@@ -5,14 +5,14 @@ import "./globals.css";
 
 const shipporiMincho = Shippori_Mincho({
   variable: "--font-heading",
-  subsets: ["latin", "latin-ext", "japanese"],
+  subsets: ["latin", "latin-ext", "japanese"] as ("latin" | "latin-ext")[],
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 const zenKakuGothicNew = Zen_Kaku_Gothic_New({
   variable: "--font-body",
-  subsets: ["latin", "latin-ext", "japanese"],
+  subsets: ["latin", "latin-ext", "japanese"] as ("latin" | "latin-ext")[],
   weight: ["400", "500", "700"],
   display: "swap",
 });
