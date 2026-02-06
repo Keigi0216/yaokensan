@@ -21,7 +21,9 @@ export function Footer({ isHome = false }: FooterProps) {
           <a href={`${p}outline`} className="transition-opacity hover:opacity-100">団体概要</a>
         </nav>
         <a
-          href="#"
+          href="https://camp-fire.jp/projects/875311/preview?token=1yy39y23&utm_campaign=cp_po_share_c_msg_projects_show"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-10 inline-block min-h-[44px] rounded-full border border-white/80 px-8 py-3 text-sm font-medium transition-all duration-200 hover:scale-[1.02] hover:bg-white hover:text-[var(--forest-green)]"
         >
           クラウドファンディングで支援する

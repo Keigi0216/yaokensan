@@ -153,7 +153,9 @@ export default function Home() {
             ぜひご支援よろしくお願いします。
           </p>
           <a
-            href="#"
+            href="https://camp-fire.jp/projects/875311/preview?token=1yy39y23&utm_campaign=cp_po_share_c_msg_projects_show"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-block min-h-[44px] rounded-full bg-[var(--hoozuki-orange)] px-8 py-3 font-medium text-white transition-all duration-200 hover:opacity-90 hover:scale-[1.02]"
           >
             クラウドファンディングで支援する
