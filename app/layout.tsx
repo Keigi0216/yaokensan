@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   description:
     "私たち八百研産は、茨城県高萩市・花貫フルーツほおずきから、地域の魅力を発信する学生団体です。",
   keywords: ["ほおずき", "学生団体", "まちおこし"],
+  verification: {
+    google: "2itCVI5JwcZo6kVz7Be7vNCyx7mK5T401zcJpAbvc6g",
+  },
 };
 
 export default function RootLayout({
