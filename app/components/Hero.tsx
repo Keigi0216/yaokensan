@@ -16,7 +16,7 @@ export function Hero({ imageSrc }: HeroProps) {
           : "bg-gradient-to-b from-[var(--warm-beige)] to-[var(--background)] py-20 md:py-32"
       }`}
     >
-      {hasImage && (
+      {imageSrc && (
         <>
           <Image
             src={imageSrc}
