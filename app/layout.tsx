@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "私たち八百研産（やおけんさん）は、茨城県高萩市・花貫フルーツほおずきから、地域の魅力を発信する学生団体です。",
   keywords: ["やおけんさん", "ほおずき", "学生団体", "まちおこし","茨城県高萩市","花貫フルーツほおずき","八百研産"],
   icons: {
-    icon: "/images/logo.png",
+    icon: "/images/logo_transparent.png",
   },
   verification: {
     google: "2itCVI5JwcZo6kVz7Be7vNCyx7mK5T401zcJpAbvc6g",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "八百研産",
     images: [
       {
-        url: `${siteUrl}/images/logo.png`,
+        url: `${siteUrl}/images/logo_transparent.png`,
         width: 1200,
         height: 630,
         alt: "八百研産",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "八百研産 | その土地にしかないものを、全国へ。",
     description:
       "私たち八百研産（やおけんさん）は、茨城県高萩市・花貫フルーツほおずきから、地域の魅力を発信する学生団体です。",
-    images: [`${siteUrl}/images/logo.png`],
+    images: [`${siteUrl}/images/logo_transparent.png`],
   },
 };
 
@@ -58,7 +58,7 @@ export default function RootLayout({
     name: "八百研産",
     alternateName: "やおけんさん",
     url: siteUrl,
-    logo: `${siteUrl}/images/logo.png`,
+    logo: `${siteUrl}/images/logo_transparent.png`,
   };
 
   return (
