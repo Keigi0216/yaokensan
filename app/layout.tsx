@@ -1,23 +1,11 @@
 import type { Metadata } from "next";
-import { Shippori_Mincho, Zen_Kaku_Gothic_New } from "next/font/google";
 import { AppNav } from "./components/AppNav";
 import "./globals.css";
 
-const shipporiMincho = Shippori_Mincho({
-  variable: "--font-heading",
-  subsets: ["latin", "latin-ext", "japanese"] as ("latin" | "latin-ext")[],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-const zenKakuGothicNew = Zen_Kaku_Gothic_New({
-  variable: "--font-body",
-  subsets: ["latin", "latin-ext", "japanese"] as ("latin" | "latin-ext")[],
-  weight: ["400", "500", "700"],
-  display: "swap",
-});
-
 const siteUrl = "https://yaokensan-two.vercel.app";
+
+const FONTS_URL =
+  "https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap";
 
 export const metadata: Metadata = {
   title: {
@@ -75,7 +63,10 @@ export default function RootLayout({
 
   return (
     <html lang="ja">
-      <body className={`${shipporiMincho.variable} ${zenKakuGothicNew.variable} antialiased`}>
+      <head>
+        <link href={FONTS_URL} rel="stylesheet" />
+      </head>
+      <body className="antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

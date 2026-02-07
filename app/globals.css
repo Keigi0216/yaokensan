@@ -23,6 +23,8 @@
   --section-padding-y: 5rem;
   --section-padding-y-md: 7rem;
   /* タイポグラフィ */
+  --font-heading: "Shippori Mincho", serif;
+  --font-body: "Zen Kaku Gothic New", sans-serif;
   --leading-body: 1.75;
   --leading-tight: 1.35;
   --tracking-heading: 0.02em;
