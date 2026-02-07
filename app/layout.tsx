@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   description:
     "私たち八百研産（やおけんさん）は、茨城県高萩市・花貫フルーツほおずきから、地域の魅力を発信する学生団体です。",
   keywords: ["やおけんさん", "ほおずき", "学生団体", "まちおこし","茨城県高萩市","花貫フルーツほおずき","八百研産"],
+  icons: {
+    icon: "/images/logo.png",
+  },
   verification: {
     google: "2itCVI5JwcZo6kVz7Be7vNCyx7mK5T401zcJpAbvc6g",
   },
@@ -61,9 +64,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "八百研産",
+    alternateName: "やおけんさん",
+    url: siteUrl,
+    logo: `${siteUrl}/images/logo.png`,
+  };
+
   return (
     <html lang="ja">
       <body className={`${shipporiMincho.variable} ${zenKakuGothicNew.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <AppNav />
         {children}
       </body>
